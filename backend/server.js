@@ -3,6 +3,8 @@ import dotenv from 'dotenv';
 import connectMongoDB from './db/connectMongoDB.js';
 
 import authRoutes from './routes/authRoutes.js';
+import bookRoutes from './routes/bookRoutes.js';
+import reviewRoutes from './routes/reviewRoutes.js'
 
 // Load env vars
 dotenv.config();
@@ -17,7 +19,9 @@ const app = express();
 app.use(express.json());
 
 
-app.use('/api/auth', authRoutes);
+app.use('/', authRoutes);
+app.use('/books', bookRoutes);
+app.use('/reviews',reviewRoutes);
 
 
 const PORT = process.env.PORT || 5000;
