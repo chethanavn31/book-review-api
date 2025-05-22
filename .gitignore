@@ -1,1 +1,18 @@
 .env
+
+# === General ===
+node_modules/
+.env
+.env.*        # e.g., .env.development, .env.local
+.DS_Store
+*.log
+logs/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+package-lock.json
+yarn.lock
+
+# === VS Code & IDE ===
+.vscode/
+.idea/

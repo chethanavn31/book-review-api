@@ -1,0 +1,11 @@
+{
+  "compilerOptions": {
+    "module": "ESNext",
+    "moduleResolution": "node",
+    "baseUrl": "./backend",
+    "paths": {
+      "*": ["*"]
+    }
+  },
+  "include": ["backend/**/*"]
+}
